@@ -137,6 +137,10 @@ body {
   width: 100%;
   border-radius: 5px;
 }
+.bibtex-image {
+  width: 50%;
+  border-radius: 5px;
+}
 
 .interpolation-video-column {
 }
@@ -155,3 +159,25 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
+/* Adjusting the columns in the BibTeX section */
+#BibTeX .columns.is-centered {
+  max-width: 100%;
+}
+
+/* Control the size of the image in the left column */
+.bibtex-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Ensuring the right column doesn't exceed the width and wraps text */
+#BibTeX .column.content {
+  max-width: 100%;
+  word-wrap: break-word;
+  /* Ensure long words or lines wrap */
+  overflow-wrap: break-word;
+  /* Alternative for wider browser support */
+}
+
