@@ -181,3 +181,43 @@ body {
   /* Alternative for wider browser support */
 }
 
+/* Preventing preformatted text from causing overflow */
+pre {
+  white-space: pre-wrap;
+  /* Wrap preformatted text */
+  word-wrap: break-word;
+  /* Ensure long words wrap within pre tags */
+  overflow-wrap: break-word;
+  /* Alternative for wider browser support */
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: rgb(245, 245, 245);
+  /* Change this to the color you desire */
+  width: 100%;
+  margin-top: auto;
+  /* Pushes footer to the bottom */
+  padding: 20px 0;
+  /* Add padding as necessary */
+  text-align: center;
+  /* Centers the content inside the footer */
+  box-sizing: border-box;
+  /* Ensures padding doesn't affect width */
+}
+
+.no-padding {
+  padding: 0 !important;
+}
