@@ -49,16 +49,17 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">FaçAID: A Transformer Model for Neuro-Symbolic Facade Reconstruction</h1>
+          <h2 class="title is-5">In ACM SIGGRAPH Asia 2024 Conference Papers Proceedings</h2>
           <div class="is-size-5 publication-authors">
+            <span class="author-block" >
+              <a href="https://scholar.google.com/citations?hl=en&user=VvlYd5kAAAAJ&view_op=list_works&sortby=pubdate">Aleksander Płocharski</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://keunhong.com">Aleksander Płocharski</a><sup>1,2</sup>,</span>
+              <a href="https://janswidzinski.com">Jan Swidzinski</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Jan Swidzinski</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Joanna Porter-Sobieraj</a><sup>1</sup>,
+              <a href="https://pages.mini.pw.edu.pl/~porterj/">Joanna Porter-Sobieraj</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Przemyslaw Musialski</a><sup>2,3</sup>
+              <a href="https://web.njit.edu/~przem/">Przemyslaw Musialski</a><sup>2,3</sup>
             </span>
           </div>
 
@@ -176,7 +177,7 @@ facade segmentations, providing a procedural representation that users can adjus
         <img src="./static/images/pipeline.png" alt="Nerfies teaser image." class="bibtex-image" />
         <div class="content has-text-justified">
           <p>
-            First, a segmented facade that is represented by non-overlapping rectangles  of variosu classesis converted into sequences of tokens representing geometric properties. 
+            First, a segmented facade that is represented by non-overlapping rectangles of various classes converted into sequences of tokens representing geometric properties. 
             These tokens are then fed into a custom GPT-2 encoder, which processes the input sequences and transforms them into
             embeddings. 
             These embeddings are subsequently passed to the sequence generator, a custom GPT-2 decoder, predicts the next token one token at a time. 
