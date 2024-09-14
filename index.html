@@ -181,13 +181,13 @@ facade segmentations, providing a procedural representation that users can adjus
             These tokens are then fed into a custom GPT-2 encoder, which processes the input sequences and transforms them into
             embeddings. 
             These embeddings are subsequently passed to the sequence generator, a custom GPT-2 decoder, predicts the next token one token at a time. 
-            In this process we use ross-attention to integrate the encoded information with partially generated sequences (procedures).
+            In this process we use cross-attention to integrate the encoded information with partially generated sequences (procedures).
             Since the procedures take the form of rooted trees, after the tokens are decoded, we employ the breadth-first
             traversal method that produces a sequence of nodes, ensuring consistency in sequence representation.  This
             procedure, when executed, regenerates the input’s structure, allowing for further customization. 
           </p>
           <p></p>
-          After inference, the procedures undergo optimization to fine-tune the sizing parameters, ensuring accurate reproduction of the input facade segmentatio.
+          After inference, the procedures undergo optimization to fine-tune the sizing parameters, ensuring accurate reproduction of the input facade segmentation.
           This is achieved through gradient-based optimization using a differentiable loss function that measures the difference
           between the input segmentation and the generated structure. The model demonstrates robust performance, with optimization
           techniques significantly improving accuracy and reducing potential training loss. This pipeline efficiently combines
